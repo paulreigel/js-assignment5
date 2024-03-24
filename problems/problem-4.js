@@ -38,12 +38,12 @@ const items = [
 
 // Omit the 'age' element
 	
-const age = 'age'
-const person = items.reduce((obj, [key, value]) => { // append your code here
+const age = 'age'//this key is to be dropped
+const person = items.reduce((obj, [key, value]) => { // append your code here covert items array into one object
 	if (key !== age){
-		obj[key] = value
+		obj[key] = value//check to see if key is not equal to age
 	}
-	return obj
+	return obj//return items that are not equal to age as an object
 	}, { })
 	console.log(person)
 test("Problem 4", person)
